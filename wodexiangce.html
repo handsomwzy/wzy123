@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <!--<![endif]-->
+<html lang="zh-cmn-Hans">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>WZYpersonalwb</title>
+          <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/index.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+        <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.css" rel="stylesheet">
+      
+    </head>
+    <body>
+   
+        <body>
+          <div class="wapper_box">
+          <div class="header_box"></div>
+          <div class="header_box1">
+              <div class="header_box2">
+                   <ul class="nav_box">
+                    
+
+                       <li class="nav_1"><a class="nav_but" href="liuyanban.html">留言板</a></li>
+                         <li class="nav_1"><a class="nav_but" href="guanyuwo.html">关于我</a>
+                         <div class="nav_slide">
+                           <div class="nav_slide1">
+                              <a href="">个人信息<span><img src="images/siade_bg1.png"/></span></a> 
+                           </div>
+                          </div> 
+                       </li>
+                         <li class="nav_1"><a class="nav_but" href="wodexiangce.html">我的相册</a>
+                          <div class="nav_slide">
+                            <div class="nav_slide1">
+                              <a href="">精彩瞬间<span><img src="images/siade_bg1.png"/></span></a>
+                            </div>
+                          </div> 
+                       </li>
+                      
+                        <li class="nav_1"><a class="nav_but" href="index.html">网站首页</a></li>
+
+                   </ul>
+              </div>
+                  <script>	 
+                       $(".nav_1").mouseenter(function(){
+                   $(this).find(".nav_slide").slideDown()
+                  });
+                  
+                  $(".nav_1").mouseleave(function(){ 
+                   $(".nav_slide").slideUp()
+                 });
+                 //$(".producys_box").mouseout(function(){
+                  // $(this).find(".producys_box1").slideUp(); 
+                 //});
+                    </script>
+          </div>
+          <!--banner部分开始-->
+           
+                  <a class="prev" href="javascript:void(0)"></a>
+                  <a class="next" href="javascript:void(0)"></a>
+                  <div class="num"><ul></ul></div>
+            </div>
+            <script>
+              /*鼠标移过，左右按钮显示*/
+              $(".banner_box").hover(function(){
+                  $(this).find(".prev,.next").fadeTo("show",0.1);
+              },function(){
+                  $(this).find(".prev,.next").hide();
+              })
+              /*鼠标移过某个按钮 高亮显示*/
+              $(".prev,.next").hover(function(){
+                  $(this).fadeTo("show",0.7);
+              },function(){
+                  $(this).fadeTo("show",0.1);
+              })
+              $(".banner_box").slide({ titCell:".num ul" , mainCell:".banner_pic" , effect:"fold", autoPlay:true, delayTime:700 , autoPage:true });
+              </script>
+              <!-- 代码 结束 -->
+            <!--banner部分结束-->
+            
+<!-- Page Header -->
+<header class="masthead" style="background-image: url('images/p4.jpg')">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-heading">
+          <h1>我的相册</h1>
+          <h2 class="subheading">记录精彩瞬间</h2>
+          <span class="meta">我的照片，作为留念</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <h2 class="first-setion">关于我</h2>
+        <p>超我是个爱拍照的人</p> 
+        <p>喜欢用照片记录生活 </p> 
+        <p>这是我的一张自拍</p>
+
+          <img class="img-fluid" src="images/p1.jpg" alt="">
+        </a>
+        <span class="caption text-muted">摄于2018.12.2</span>
+
+        <h2 class="second-setion"><h2 class="second-setion">关于摄影</h2>
+        <p>接触到各种修图APP</p>
+        <p>我学会了添加滤镜，人像修容</p>
+
+            <img class="img-fluid" src="images/p2.jpg" alt="">
+        </a>
+        <span class="caption text-muted">摄于2018.11.22</span>
+
+        <h2 class="third-setion">我的更多信息</h2>
+        <p><a href="https://weibo.com/5317689422/profile?topnav=1&wvr=" target="_blank">请点击关注我的微博</a>!</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
+
+				<!--内容结束-->
+        <div class="footer_box"><p>学号：18219111118 --更多--</p></div>				</div>
+			</div>
+	</body>
+</html>
